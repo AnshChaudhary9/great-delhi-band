@@ -1,0 +1,21 @@
+# Tasks - Great Delhi Band Website
+
+- [ ] Generate premium AI visuals for the website
+  - [ ] Hero Image (Lively Baraat)
+  - [ ] Wedding Band Performance
+  - [ ] Ghori/Baggi Entry
+  - [ ] Dhol Players
+  - [ ] Fireworks
+- [ ] Set up project structure
+  - [ ] Create `index.html` with semantic structure
+  - [ ] Create `style.css` with design system (Maroon & Gold)
+  - [ ] Create `script.js` for interactivity
+- [ ] Implement Hero Section
+- [ ] Implement About & Services Sections
+- [ ] Implement Why Choose Us & Gallery
+- [ ] Implement Testimonials & Booking Form
+- [ ] Add Sticky/Floating CTAs
+- [ ] Polish & Verification
+  - [ ] Responsive design check
+  - [ ] Animation smoothness
+  - [ ] Browser tool verification
