@@ -19,6 +19,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 180px; /* Maximum offset to ensure titles are fully visible below header */
 }
 
 body {
@@ -639,7 +640,7 @@ footer { background: #0a0a0a; color: #999; padding: 80px 0 40px; }
 #nav-links.active {
     display: flex !important;
     position: fixed;
-    top: 70px;
+    top: 85px; /* Updated to match mobile header height */
     left: 0;
     width: 100%;
     background: var(--primary-color);
@@ -671,11 +672,42 @@ footer { background: #0a0a0a; color: #999; padding: 80px 0 40px; }
 }
 /* Final Fix for Logo/Menu Overlap */
 @media (max-width: 767px) {
-    .logo { max-width: 50% !important; flex-shrink: 1; }
-    .logo-circle { transform: scale(0.65) !important; }
-    #mobile-toggle { 
-        margin-left: 20px !important; 
-        flex-shrink: 0; 
-        padding: 12px !important; 
+    #navbar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+    }
+
+    .logo {
+        flex-shrink: 0;
+        z-index: 10006;
+    }
+
+    .logo-circle {
+        width: 55px; /* Explicit dimensions to correctly manage flex space */
+        height: 55px;
+        transform: none !important;
+        border-width: 2px;
+        padding: 2px;
+    }
+
+    .logo-circle .top { font-size: 0.45rem; }
+    .logo-circle .mid { font-size: 0.6rem; }
+    .logo-circle .bot { font-size: 0.65rem; }
+
+    #mobile-toggle {
+        margin-left: auto !important;
+        flex-shrink: 0;
+        z-index: 10007;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid var(--secondary-color);
+        border-radius: 8px;
+        color: var(--white);
     }
 }
