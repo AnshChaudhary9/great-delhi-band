@@ -669,3 +669,13 @@ footer { background: #0a0a0a; color: #999; padding: 80px 0 40px; }
     }
     #mobile-toggle { margin-left: auto; padding: 10px; }
 }
+/* Final Fix for Logo/Menu Overlap */
+@media (max-width: 767px) {
+    .logo { max-width: 50% !important; flex-shrink: 1; }
+    .logo-circle { transform: scale(0.65) !important; }
+    #mobile-toggle { 
+        margin-left: 20px !important; 
+        flex-shrink: 0; 
+        padding: 12px !important; 
+    }
+}
