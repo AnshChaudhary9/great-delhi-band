@@ -654,3 +654,18 @@ footer { background: #0a0a0a; color: #999; padding: 80px 0 40px; }
     cursor: pointer;
     z-index: 10005;
 }
+/* Fix Navbar Overlap on Mobile */
+.logo { max-width: 70%; overflow: visible; }
+.logo-circle { transform: scale(0.9); transform-origin: left center; }
+
+@media (max-width: 767px) {
+    .logo { max-width: 60%; }
+    .logo-circle { transform: scale(0.7); }
+    #navbar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+    }
+    #mobile-toggle { margin-left: auto; padding: 10px; }
+}
